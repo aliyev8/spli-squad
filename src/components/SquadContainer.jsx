@@ -45,7 +45,9 @@ export default function SquadContainer() {
                 </Button>
             </div>
             <PlayersTable players={players} setPlayers={setPlayers} />
-                <Teams teams={teams}/>
+            {
+                players && players.length > 0 &&  <Teams teams={teams}/>
+            }
 
         </div>
     );
