@@ -6,15 +6,12 @@ import Head from "next/head";
 const inter = Inter({ subsets: ["latin"] });
 
 
-const APP_NAME = "PWA App";
-const APP_DEFAULT_TITLE = "My Awesome PWA App";
-const APP_TITLE_TEMPLATE = "%s - PWA App";
-const APP_DESCRIPTION = "Best PWA app in the world!";
+
 export const metadata = {
 
     title: 'split-squad',
     description:'futbol heyyətlərini böl',
-    manifest: "/manifest.json",
+
 
     openGraph: {
         title: 'split-squad',
@@ -32,6 +29,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
+    <head>
+        <link rel="manifest" href="/manifest.json" />
+        <link rel="icon" href="/zizu.webp" />
+        <meta name="theme-color" content="#ffffff" />
+    </head>
       <body className={`${inter.className} bg-white dark:bg-slate-900`}>
      <Providers>
          {children}

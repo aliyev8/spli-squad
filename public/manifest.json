@@ -1,13 +1,21 @@
 {
-    "theme_color": "#4a90e2",
-    "background_color": "#4a90e2",
-    "display": "standalone",
-    "scope": "/",
-    "start_url": "/",
-    "name": "Squads",
+    "name": "Split Squads",
+    "short_name": "sqs",
     "description": "split squads",
-    "short_name": "sps",
-    "icons": {
-        "name": "Zinedine-Zidane-A-Maestro-of-the-Beautiful-Game.webp"
-    }
+    "icons": [
+        {
+            "src": "/zizu.webp",
+            "type": "image/webp",
+            "sizes": "192x192"
+        },
+        {
+            "src": "/zizu.webp",
+            "type": "image/webp",
+            "sizes": "512x512"
+        }
+    ],
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#0099e5",
+    "background_color": "#0099e5"
 }
