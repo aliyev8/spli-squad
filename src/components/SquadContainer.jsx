@@ -20,6 +20,7 @@ export default function SquadContainer() {
         return savedTeams ? JSON.parse(savedTeams) : [[], []];
     });
 
+
     const handleDivideTeams = () => {
         const [team1, team2] = divideTeams(players);
         setTeams([team1, team2]);
