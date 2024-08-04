@@ -1,0 +1,13 @@
+{
+    "theme_color": "#4a90e2",
+    "background_color": "#4a90e2",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "/",
+    "name": "Squads",
+    "description": "split squads",
+    "short_name": "sps",
+    "icons": {
+        "name": "Zinedine-Zidane-A-Maestro-of-the-Beautiful-Game.webp"
+    }
+}
