@@ -23,7 +23,7 @@ export default function AddModal({players, setPlayers}) {
         },...players])
     }
 
-    console.log(players)
+
     return (
         <>
             <Button
