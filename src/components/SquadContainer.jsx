@@ -6,6 +6,7 @@ import {useEffect, useState} from "react";
 import {divideTeams} from "@/uitils/utils";
 import {Button} from "flowbite-react";
 import Teams from "@/components/Teams";
+import SuggestPwa from "@/components/Pwa";
 
 export default function SquadContainer() {
     const [players, setPlayers] = useState(() => {
@@ -36,10 +37,11 @@ export default function SquadContainer() {
         localStorage.setItem('teams', JSON.stringify(teams));
     }, [teams]);
 
-    console.log(teams)
+
     return (
         <div>
             <div className='flex justify-center'>
+                <SuggestPwa/>
                 <AddModal players={players} setPlayers={setPlayers} />
                 <Button color='blue' className='ml-8' onClick={handleDivideTeams}>
                     Böl

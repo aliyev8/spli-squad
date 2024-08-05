@@ -22,6 +22,7 @@ export default function SuggestPwa(){
 
     const handleInstallClick = async () => {
         if (deferredPrompt) {
+
             deferredPrompt.prompt();
             const { outcome } = await deferredPrompt.userChoice;
             if (outcome === 'accepted') {

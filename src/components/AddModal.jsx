@@ -15,7 +15,6 @@ export default function AddModal({players, setPlayers}) {
 
 
     const handleSubmit = (values) => {
-        console.log(values)
         let id =nanoid()
         setOpenModal(false)
         setPlayers((players) => [{
