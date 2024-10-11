@@ -1,7 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import {Providers} from "@/app/providers";
-import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,7 +29,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
     <head>
-        <link rel="manifest" href="/manifest.json"/>
+        <link rel="manifest" href="/manifest.js"/>
             <meta name="apple-mobile-web-app-capable" content="yes"/>
                 <meta name="apple-mobile-web-app-title" content="splitsquads"/>
                     <meta name="apple-mobile-web-app-status-bar-style" content="black"/>

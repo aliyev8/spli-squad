@@ -1,6 +1,7 @@
 'use client'
 
 import {useEffect, useState} from "react";
+import {Button} from "flowbite-react";
 
 export default function SuggestPwa(){
     const [deferredPrompt, setDeferredPrompt] = useState(null);
@@ -8,6 +9,8 @@ export default function SuggestPwa(){
 
     useEffect(() => {
         const handleBeforeInstallPrompt = (e) => {
+            console.log('beforeinstallprompt event fired');
+
             e.preventDefault();
             setDeferredPrompt(e);
             setIsInstallable(true);
@@ -37,9 +40,9 @@ export default function SuggestPwa(){
 
     return <div>
         {isInstallable && (
-            <button id="install-button" onClick={handleInstallClick} >
+            <Button color='light' id="install-button" className='z-40' onClick={handleInstallClick} >
                 Əsas ekrana əlavə et
-            </button>
+            </Button>
         )}
     </div>
 }
